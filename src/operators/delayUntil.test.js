@@ -1,8 +1,8 @@
-const {expect} = require('chai');
-// const sinon = require('sinon');
-const {marbles} = require('rxjs-marbles/mocha');
+import {expect} from 'chai';
+// import sinon from 'sinon';
+import {marbles} from 'rxjs-marbles/mocha';
 
-const delayUntil = require('./delayUntil');
+import delayUntil from './delayUntil';
 
 describe('delayUntil', () => {
   it('should export a function', () => {

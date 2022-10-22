@@ -1,5 +1,5 @@
-const {isObservable,of,merge,throwError} = require('rxjs');
-const {buffer,mergeMap,skipUntil,share,take} = require('rxjs/operators');
+import {isObservable,of,merge,throwError} from 'rxjs';
+import {buffer,mergeMap,skipUntil,share,take} from 'rxjs/operators';
 
 const errors = {
   triggerRequired: () => (
@@ -23,4 +23,4 @@ const delayUntil = start$ => source$ => {
   return output$;
 };
 
-module.exports = delayUntil;
+export default delayUntil;
