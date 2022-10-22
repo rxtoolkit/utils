@@ -3,8 +3,6 @@ name: 'Release'
 on:
   push:
     branches: [master]
-env:
-  NODE_VERSION: 16.x
 jobs:
   get-next-version:
     name: Gets the next version
@@ -19,7 +17,7 @@ jobs:
       - name: Use node.js
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version: 16.x
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@buccaneerai'
           always-auth: true
@@ -47,7 +45,7 @@ jobs:
       - name: Use node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version: 16.x
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@buccaneerai'
           always-auth: true
@@ -87,7 +85,7 @@ jobs:
       - name: Use node.js
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version: 16.x
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@buccaneerai'
           always-auth: true
