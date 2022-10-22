@@ -8,7 +8,7 @@ env:
 jobs:
   get-next-version:
     name: Gets the next version
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       -
         name: Checkout code
