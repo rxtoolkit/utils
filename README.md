@@ -10,7 +10,7 @@ yarn add @buccaneerai/rxjs-utils
 
 ## API
 
-## `debug`
+### `debug`
 Add a debugger to an RXJS pipeline.
 ```js
 import {from} from 'rxjs';
@@ -56,8 +56,8 @@ output$.subscribe(console.log);
 // bar
 ```
 
-## `toConsole`
-Add a debugger to an RXJS pipeline.
+### `toConsole`
+Add log an RXJS pipeline's data to the console.
 ```js
 import {from} from 'rxjs';
 import {toConsole} from '@buccaneerai/rxjs-utils';
