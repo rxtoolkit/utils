@@ -57,7 +57,7 @@ output$.subscribe(console.log);
 ```
 
 ### `toConsole`
-Add a debugger to an RXJS pipeline.
+Add log an RXJS pipeline's data to the console.
 ```js
 import {from} from 'rxjs';
 import {toConsole} from '@buccaneerai/rxjs-utils';
