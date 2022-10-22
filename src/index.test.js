@@ -5,7 +5,9 @@ import {expect} from 'chai';
 import * as api from './index';
 
 const exportedKeys = [
+  'debug',
   'delayUntil',
+  'toConsole',
 ];
 
 describe('index', () => {
