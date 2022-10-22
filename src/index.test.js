@@ -4,10 +4,12 @@ import {expect} from 'chai';
 
 import * as api from './index';
 
+const exportedKeys = [
+  'delayUntil',
+];
+
 describe('index', () => {
   it('should export public API', () => {
-    expect(Object.keys(api)).to.deep.equal([
-      'myPublicFunction1', // FIXME
-    ]);
+    expect(Object.keys(api)).to.deep.equal(exportedKeys);
   });
 });

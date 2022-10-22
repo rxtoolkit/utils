@@ -1,30 +1,28 @@
-# @buccaneerai/PACKAGE_NAME
-> DESCRIPTION
-
-FIXME - TODOS
-- Replace all instances of `"PACKAGE_NAME"` (in this repository) with the name of your package
-- Replace all instances of DESCRIPTION with your descrition of the package.
-- Look for the items that say FIXME and fix them.  There are only a couple.
+# @buccaneerai/rxjs-utils
+> 🔌 Re-usable operators and utilities for rxjs
 
 ## Installation
 This is a private package. It requires setting up access in your npm config.
 
 ```bash
-yarn add @buccaneerai/PACKAGE_NAME
+yarn add @buccaneerai/rxjs-utils
 ```
 
 ## API
 
-FIXME - write some docs so other devs know how the public API works.
-### `myFunc`
+### `delayUntil`
+Delays emissions from a source observable until another observable emits.
 ```js
-import {from} from 'rxjs';
-import {myFunction} from '@buccaneerai/PACKAGE_NAME';
+import {from,timer} from 'rxjs';
+import {tap} from 'rxjs/operators';
+import {delayUntil} from '@buccaneerai/rxjs-utils';
 
 const string$ = from(['foo', 'bar']);
-const output$ = string$.pipe(myFunction());
+const start$ = timer(5000).pipe(tap(console.log));
+const output$ = string$.pipe(delayUntil(start$));
 output$.subscribe(console.log); 
 // Output:
+// 5000
 // foo
 // bar
 ```
