@@ -2762,6 +2762,11 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
+semantic-release-export-data@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/semantic-release-export-data/-/semantic-release-export-data-1.0.0.tgz#e93a69936247fa418dbdf9e42ca4f909d7e36ac3"
+  integrity sha512-yi+GJR8adCcc+23wxvSdnf9pT5VWkJfSubyPRRywTMIuUxR32NvK8k/ok0WVM0BXjCsTUVJSz8oXi79ZxfnTyw==
+
 semver@7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"
