@@ -76,3 +76,21 @@ output$.subscribe();
 // 3
 // squared 4
 ```
+
+### `withIndex`
+Add an index to data in the stream.
+```js
+import {from} from 'rxjs';
+import {withIndex} from '@buccaneerai/rxjs-utils';
+
+const input$ = from(['there\'s', 'no', 'place', 'like', 'home']);
+const output$ = input$.pipe(
+  withIndex()
+);
+output$.subscribe(console.log);
+// ["there's", 0]
+// ["no", 1]
+// ["place", 2]
+// ["like", 3]
+// ["home", 4]
+```

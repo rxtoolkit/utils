@@ -8,6 +8,7 @@ const exportedKeys = [
   'debug',
   'delayUntil',
   'toConsole',
+  'withIndex',
 ];
 
 describe('index', () => {
