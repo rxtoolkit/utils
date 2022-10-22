@@ -1,7 +1,7 @@
 {
   "name": "@buccaneerai/rxjs-utils",
   "version": "1.0.0",
-  "🔌 Re-usable operators and utilities for rxjs": "🔌 Re-usable operators and utilities for rxjs",
+  "description": "🔌 Re-usable operators and utilities for rxjs",
   "main": "dist/index.js",
   "repository": "https://github.com/buccaneerai/rxjs-utils.git",
   "author": "Thread Medical, Inc. <hello@threadmedical.com>",
