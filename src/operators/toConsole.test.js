@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 // import sinon from 'sinon';
-// import {marbles} from 'rxjs-marbles/mocha';
+import {marbles} from 'rxjs-marbles/mocha';
 
 import toConsole from './toConsole';
 
