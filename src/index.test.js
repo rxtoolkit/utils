@@ -7,7 +7,11 @@ import * as api from './index';
 const exportedKeys = [
   'debug',
   'delayUntil',
+  'listToSingleResult',
+  'parseJSON',
+  'reduceToString',
   'toConsole',
+  'toJSON',
   'withIndex',
 ];
 
