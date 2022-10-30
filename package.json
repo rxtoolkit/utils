@@ -1,6 +1,6 @@
 {
   "name": "@buccaneerai/rxjs-utils",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "🔌 Re-usable operators and utilities for rxjs",
   "main": "dist/index.js",
   "repository": "https://github.com/buccaneerai/rxjs-utils.git",
