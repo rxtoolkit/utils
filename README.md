@@ -56,6 +56,54 @@ output$.subscribe(console.log);
 // bar
 ```
 
+### `listToSingleResult`
+Gets the item from a single-item array and throws if the array is empty or has multiple items.
+```js
+import {of} from 'rxjs';
+import {listToSingleResult} from '@buccaneerai/rxjs-utils';
+
+// this code delay emitting items from the source observable until 5 seconds 
+// have passed
+const input$ = of([{'foo': 'bar'}]);
+const output$ = string$.pipe(listToSingleResult());
+output$.subscribe(console.log); 
+// Output:
+// {foo: bar}
+```
+
+### `reduceToString`
+Concatenates items into a string.
+```js
+import {from,takeLast} from 'rxjs';
+import {listToSingleResult} from '@buccaneerai/rxjs-utils';
+
+// this code delay emitting items from the source observable until 5 seconds 
+// have passed
+const input$ = from(['always ', 'money ', 'in ', 'the ', 'banana ', 'stand']);
+const output$ = string$.pipe(
+  reduceToString(),
+  takeLast(1)
+);
+output$.subscribe(console.log); 
+// Output:
+// "always money in the banana stand"
+```
+
+### `parseJSON`
+Map JSON strings to JavaScript objects.
+```js
+import {from} from 'rxjs';
+import {toConsole, parseJSON} from '@buccaneerai/rxjs-utils';
+
+const input$ = from(['{"foo": "bar"}']);
+const output$ = input$.pipe(
+  parseJSON(),
+  toConsole()
+);
+output$.subscribe();
+// {foo: 'bar'}
+```
+
 ### `toConsole`
 Add log an RXJS pipeline's data to the console.
 ```js
@@ -75,6 +123,21 @@ output$.subscribe();
 // squared 4
 // 3
 // squared 4
+```
+
+### `toJSON`
+Map each item to a JSON string.
+```js
+import {from} from 'rxjs';
+import {toConsole, toJSON} from '@buccaneerai/rxjs-utils';
+
+const input$ = from([{foo: 'bar'1}]);
+const output$ = input$.pipe(
+  toJSON(),
+  toConsole('squared')
+);
+output$.subscribe();
+// '{"foo": "bar"}'
 ```
 
 ### `withIndex`
