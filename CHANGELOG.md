@@ -1,3 +1,10 @@
+# [0.2.0](https://github.com/buccaneerai/rxjs-utils/compare/v0.1.0...v0.2.0) (2022-10-22)
+
+
+### Features
+
+* added withIndex operator ([8410bd2](https://github.com/buccaneerai/rxjs-utils/commit/8410bd2a38e633be68a3258c76df097b80837481))
+
 # [0.1.0](https://github.com/buccaneerai/rxjs-utils/compare/v0.0.0...v0.1.0) (2022-10-22)
 
 
