@@ -1,11 +1,8 @@
-# @buccaneerai/rxjs-utils
+# @rxtk/utils
 > 🔌 Re-usable operators and utilities for rxjs
 
-## Installation
-This is a private package. It requires setting up access in your npm config.
-
 ```bash
-yarn add @buccaneerai/rxjs-utils
+yarn add @rxtk/utils
 ```
 
 ## API
@@ -15,7 +12,7 @@ Add a debugger to an RXJS pipeline.
 ```js
 import {from} from 'rxjs';
 import {map} from 'rxjs/operators';
-import {debug,toConsole} from '@buccaneerai/rxjs-utils';
+import {debug,toConsole} from '@rxtk/utils';
 
 const input$ = from([2, 3]);
 const output$ = input$.pipe(
@@ -42,7 +39,7 @@ Delays emissions from a source observable until another observable emits.
 import {from,timer} from 'rxjs';
 import {map} from 'rxjs/operators';
 import {tap} from 'rxjs/operators';
-import {delayUntil} from '@buccaneerai/rxjs-utils';
+import {delayUntil} from '@rxtk/utils';
 
 // this code delay emitting items from the source observable until 5 seconds 
 // have passed
@@ -60,7 +57,7 @@ output$.subscribe(console.log);
 Gets the item from a single-item array and throws if the array is empty or has multiple items.
 ```js
 import {of} from 'rxjs';
-import {listToSingleResult} from '@buccaneerai/rxjs-utils';
+import {listToSingleResult} from '@rxtk/utils';
 
 // this code delay emitting items from the source observable until 5 seconds 
 // have passed
@@ -75,7 +72,7 @@ output$.subscribe(console.log);
 Concatenates items into a string.
 ```js
 import {from,takeLast} from 'rxjs';
-import {listToSingleResult} from '@buccaneerai/rxjs-utils';
+import {listToSingleResult} from '@rxtk/utils';
 
 // this code delay emitting items from the source observable until 5 seconds 
 // have passed
@@ -93,7 +90,7 @@ output$.subscribe(console.log);
 Map JSON strings to JavaScript objects.
 ```js
 import {from} from 'rxjs';
-import {toConsole, parseJSON} from '@buccaneerai/rxjs-utils';
+import {toConsole, parseJSON} from '@rxtk/utils';
 
 const input$ = from(['{"foo": "bar"}']);
 const output$ = input$.pipe(
@@ -108,7 +105,7 @@ output$.subscribe();
 Add log an RXJS pipeline's data to the console.
 ```js
 import {from} from 'rxjs';
-import {toConsole} from '@buccaneerai/rxjs-utils';
+import {toConsole} from '@rxtk/utils';
 
 const input$ = from([1, 2, 3]);
 const output$ = input$.pipe(
@@ -129,7 +126,7 @@ output$.subscribe();
 Map each item to a JSON string.
 ```js
 import {from} from 'rxjs';
-import {toConsole, toJSON} from '@buccaneerai/rxjs-utils';
+import {toConsole, toJSON} from '@rxtk/utils';
 
 const input$ = from([{foo: 'bar'1}]);
 const output$ = input$.pipe(
@@ -144,7 +141,7 @@ output$.subscribe();
 Add an index to data in the stream.
 ```js
 import {from} from 'rxjs';
-import {withIndex} from '@buccaneerai/rxjs-utils';
+import {withIndex} from '@rxtk/utils';
 
 const input$ = from(['there\'s', 'no', 'place', 'like', 'home']);
 const output$ = input$.pipe(

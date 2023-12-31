@@ -3,22 +3,14 @@ name: 'Pull Request Tests'
 on:
   pull_request:
     types: [opened, reopened, synchronize]
-env:
-  NODE_VERSION: 16.x
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v1
         with:
-          node-version: ${{ env.NODE_VERSION }}
-          registry-url: 'https://npm.pkg.github.com/'
-          scope: '@buccaneerai'
-          always-auth: true
-          cache: 'yarn'
+          node-version: '20.x'
       - run: yarn install
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       - run: yarn test
       - run: yarn build

@@ -1,16 +1,13 @@
 {
-  "name": "@buccaneerai/rxjs-utils",
+  "name": "@rxtk/utils",
   "version": "0.3.0",
   "description": "🔌 Re-usable operators and utilities for rxjs",
   "main": "dist/index.js",
-  "repository": "https://github.com/buccaneerai/rxjs-utils.git",
-  "author": "Thread Medical, Inc. <hello@threadmedical.com>",
-  "license": "UNLICENSED",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
+  "repository": "https://github.com/rxtoolkit/utils.git",
+  "author": "Buccaneer LLC <opensource@buccaneer.ai>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/buccaneerai/rxjs-utils/issues"
+    "url": "https://github.com/rxtoolkit/utils/issues"
   },
   "keywords": [],
   "directories": {
