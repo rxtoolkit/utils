@@ -1,3 +1,10 @@
+## [0.3.1](https://github.com/rxtoolkit/utils/compare/v0.3.0...v0.3.1) (2023-12-31)
+
+
+### Bug Fixes
+
+* first npm deployment from GitHub ([626cbd9](https://github.com/rxtoolkit/utils/commit/626cbd932cdfbf6652280d9a8e7282528d7faad5))
+
 # [0.3.0](https://github.com/buccaneerai/rxjs-utils/compare/v0.2.0...v0.3.0) (2022-10-30)
 
 
