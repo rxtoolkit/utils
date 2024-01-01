@@ -2,6 +2,10 @@
 > 🔌 Re-usable operators and utilities for rxjs
 
 ```bash
+npm i @rxtk/utils
+```
+
+```bash
 yarn add @rxtk/utils
 ```
 
